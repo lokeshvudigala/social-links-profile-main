@@ -95,6 +95,7 @@ h1 {
   text-decoration: none;
   color: var(--color-white);
   letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 .profile-social-links .social-link a:hover {
