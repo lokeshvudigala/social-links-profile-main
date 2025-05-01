@@ -1,0 +1,110 @@
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html,
+main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--color-grey-900);
+  font-family: "Inter", sans-serif;
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.profile-card {
+  background-color: var(--color-grey-800);
+  max-width: 384px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 12px;
+}
+
+.profile-card .profile-picture {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.profile-card .profile-info {
+  text-align: center;
+}
+
+.profile-card .profile-name {
+  margin-bottom: 4px;
+}
+
+.profile-card .profile-location {
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+.profile-card .profile-social-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.profile-social-links .social-link a {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--color-grey-700);
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-white);
+  letter-spacing: 0.5px;
+}
+
+.profile-social-links .social-link a:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey-700);
+}
+
+@media (max-width: 576px) {
+  .profile-card {
+    width: 90%;
+    padding: 24px;
+  }
+}
